@@ -11,6 +11,7 @@ body {
 
 .navbar {
   width: 100%;
+  margin-top: -10rem;
   padding: 2rem 0;
   position: fixed;
   font-family: "Poppins", sans-serif;
@@ -60,6 +61,7 @@ body {
   width: 100%;
 }
 .navbar__link--rdv {
+  color: #FFFFFF;
   text-decoration: none;
   font-weight: bold;
   background-color: #D4A574;
@@ -68,6 +70,10 @@ body {
 }
 .navbar__link--rdv:hover {
   opacity: 0.7;
+}
+
+.accueil {
+  margin-top: 10rem;
 }
 
 .services__section {

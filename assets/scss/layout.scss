@@ -2,6 +2,7 @@
 
 .navbar {
     width: 100%;
+    margin-top: -10rem;
     padding: $spacing-md 0;
     position: fixed;
     font-family: $font-primary;
@@ -59,6 +60,7 @@
         }
 
         &--rdv {
+            color: $color-white;
             text-decoration: none;
             font-weight: bold;
             background-color: $color-primary;
