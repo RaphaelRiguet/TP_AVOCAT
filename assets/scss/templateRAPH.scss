@@ -1,6 +1,7 @@
 @use'./variables.scss' as *;
+
 .services__section{
-    background-color: $color-white;
+    background-color: $color-white!important;
 }
 .services__subtitle{
     color: $color-primary;
@@ -19,9 +20,9 @@
 }
 
 
-
-
 .services{
+
+
     &__item{
     background-color: #fff;
     border-radius: $border-radius;
