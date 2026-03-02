@@ -1,11 +1,12 @@
 @use 'variables' as *;
 
 .navbar {
-    margin: 15px;
-    padding: 15px 0;
-    position: relative;
+    width: 100%;
+    padding: $spacing-md 0;
+    position: fixed;
     font-family: $font-primary;
     box-shadow: $box-shadow;
+    
 
     &__container {
         max-width: 1200px;

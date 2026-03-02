@@ -7,9 +7,9 @@
 }
 
 .navbar {
-  margin: 15px;
-  padding: 15px 0;
-  position: relative;
+  width: 100%;
+  padding: 2rem 0;
+  position: fixed;
   font-family: "Poppins", sans-serif;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
