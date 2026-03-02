@@ -1,0 +1,121 @@
+@use'./variables.scss' as *;
+.services__section{
+    background-color: $color-white;
+}
+.services__subtitle{
+    color: $color-primary;
+    font-size: $font-size-large;
+    margin-bottom: $spacing-sm;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: $font-primary;
+    text-align: center;
+}
+.services__grid {
+    display: grid;
+    margin: 0%  $spacing-xxl;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+
+
+
+.services{
+    &__item{
+    background-color: #fff;
+    border-radius: $border-radius;
+    padding: $spacing-md;
+    box-shadow:$box-shadow;
+        &__link{
+        color: #d4a574;
+        font-weight: 500;
+        display: inline-flex;
+        align-items: center;
+        gap: $spacing-xl;
+        }
+        &__description{
+        color:$color-gray;
+        font-size: $font-size-large;
+        line-height: 1.7;
+        margin-bottom: $spacing-sm;
+        }
+        &__title{
+        font-size: $font-secondary;
+        color:$color-dark;
+        font-size: $font-size-h3;
+        line-height: 1.7;
+        margin-bottom: $spacing-sm;
+        font-weight: bold;
+        }
+        &:hover{
+            box-shadow:$box-shadow-lg;
+        }
+
+
+    &--primary{
+        background-color: #d4a574;
+        color: #fff;
+        box-shadow:$box-shadow;
+        border-radius: $border-radius;
+        &__link{
+        color: #d4a574;
+        font-weight: 500;
+        display: inline-flex;
+        align-items: center;
+        gap: $spacing-xl;
+        }
+        &__description{
+        color:$color-white;
+        font-size: $font-size-large;
+        line-height: 1.7;
+        margin-bottom: $spacing-sm;
+        }
+        &__title{
+        font-size: $font-secondary;
+        color:$color-white;
+        font-size: $font-size-h3;
+        line-height: 1.7;
+        margin-bottom: $spacing-sm;
+        font-weight: bold;
+        }
+        &:hover{
+            box-shadow:$box-shadow-lg;
+        }
+    }
+
+    &--secondary{
+        background-color: $color-secondary;
+
+        box-shadow:$box-shadow;
+        border-radius:$border-radius ;
+        &__title{
+        font-size: $font-secondary;
+        color:$color-white;
+        font-size: $font-size-h3;
+        line-height: 1.7;
+        margin-bottom: $spacing-sm;
+        font-weight: bold;
+        }
+        &__description{
+        color:$color-white;
+        font-size: $font-size-large;
+        line-height: 1.7;
+        margin-bottom: $spacing-sm;
+        }
+        &__link{
+        color: #d4a574;
+        font-weight: 500;
+        display: inline-flex;
+        align-items: center;
+        gap: $spacing-xl;
+        }
+        &:hover{
+            box-shadow:$box-shadow-lg;
+        }
+
+    }
+
+
+}
+}
