@@ -7,8 +7,11 @@
 }
 
 .navbar {
+  margin: 15px;
   padding: 15px 0;
   position: relative;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .navbar__container {
   max-width: 1200px;
@@ -19,7 +22,7 @@
   justify-content: space-between;
 }
 .navbar__brand {
-  color: #fff;
+  color: #FFFFFF;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.2rem;
@@ -34,46 +37,33 @@
 .navbar__link {
   position: relative;
   text-decoration: none;
-  color: #ccc;
+  color: #FFFFFF;
+  font-weight: bold;
   font-size: 0.95rem;
   padding: 5px 0;
   transition: color 0.3s ease;
 }
 .navbar__link:hover {
-  color: #fff;
-}
-.navbar__link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 0;
-  height: 2px;
-  background: #fff;
-  transition: width 0.3s ease;
+  color: #D4A574;
 }
 .navbar__link:hover::after {
   width: 100%;
 }
 .navbar__link.active {
-  color: #fff;
+  color: #D4A574;
 }
-.navbar__link.active::after {
+.navbar__link::after {
   width: 100%;
 }
-.navbar__toggle {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  background: none;
-  border: none;
-  cursor: pointer;
+.navbar__link--rdv {
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #D4A574;
+  padding: 20px;
+  border-radius: 5px;
 }
-.navbar__toggle span {
-  width: 25px;
-  height: 2px;
-  background: #fff;
-  transition: 0.3s ease;
+.navbar__link--rdv:hover {
+  opacity: 0.7;
 }
 
 /*# sourceMappingURL=style.css.map */
