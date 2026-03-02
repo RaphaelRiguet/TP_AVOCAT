@@ -128,13 +128,13 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 .services__item--primary {
-  background-color: #d4a574;
-  color: #fff;
+  background-color: #D4A574;
+  color: #FFFFFF;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
 .services__item--primary__link {
-  color: #d4a574;
+  color: #D4A574;
   font-weight: 500;
   display: inline-flex;
   align-items: center;
@@ -177,7 +177,7 @@ body {
   margin-bottom: 1rem;
 }
 .services__item--secondary__link {
-  color: #d4a574;
+  color: #D4A574;
   font-weight: 500;
   display: inline-flex;
   align-items: center;

@@ -55,12 +55,12 @@
 
 
     &--primary{
-        background-color: #d4a574;
-        color: #fff;
+        background-color: $color-primary;
+        color:$color-white ;
         box-shadow:$box-shadow;
         border-radius: $border-radius;
         &__link{
-        color: #d4a574;
+        color:$color-primary ;
         font-weight: 500;
         display: inline-flex;
         align-items: center;
@@ -105,7 +105,7 @@
         margin-bottom: $spacing-sm;
         }
         &__link{
-        color: #d4a574;
+        color: $color-primary;
         font-weight: 500;
         display: inline-flex;
         align-items: center;
