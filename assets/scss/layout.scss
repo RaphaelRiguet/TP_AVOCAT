@@ -8,6 +8,7 @@
     font-family: $font-primary;
     box-shadow: $box-shadow;
     background-color: $color-secondary;
+    z-index: 100;
     
 
     &__container {

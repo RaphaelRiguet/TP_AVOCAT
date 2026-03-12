@@ -23,6 +23,7 @@ body {
   font-family: "Poppins", sans-serif;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-color: #1E2A3A;
+  z-index: 100;
 }
 .navbar__container {
   max-width: 1200px;
@@ -141,7 +142,6 @@ body {
 .accueil__image {
   position: relative;
   width: fit-content;
-  margin-right: 10rem;
 }
 .accueil__image img {
   width: 100%;
