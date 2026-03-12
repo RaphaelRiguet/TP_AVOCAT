@@ -216,7 +216,7 @@ body {
   color: #666;
 }
 
-/* SERVICES STATS */
+/* SERVICES */
 .Services {
   background-color: #1E2A3A;
   padding: 4rem 0;
@@ -393,24 +393,132 @@ body {
   }
 }
 /* EXPERTISE */
+.expertise {
+  padding: 6rem 15rem;
+  background-color: #1E2A3A;
+}
 .expertise__header {
   text-align: center;
   margin-bottom: 4rem;
 }
+.expertise__subtitle {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  color: #D4A574;
+  margin-bottom: 1rem;
+}
 .expertise__title {
   font-family: "Playfair Display", serif;
   font-size: 2.5rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 2rem;
+}
+.expertise__title .text-accent {
+  color: #D4A574;
 }
 .expertise__description {
+  font-size: 18px;
   color: #6C757D;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.expertise__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
 }
 .expertise__steps {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
-  margin-top: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  flex: 1 1 60%;
+}
+.expertise .step-card {
+  background-color: #2C3E50;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: #6C757D solid 1px;
+}
+.expertise .step-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border: #D4A574 solid 1px;
+  background-color: #3f444a;
+}
+.expertise .step-card__icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 1rem;
+  background-color: #B8935F;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+}
+.expertise .step-card__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-bottom: 0.5rem;
+}
+.expertise .step-card__description {
+  font-size: 16px;
+  color: #6C757D;
+}
+.expertise__images {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1 1 35%;
+}
+.expertise__images .image-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.expertise__images .image-card__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.expertise__images .image-card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  color: #FFFFFF;
+  text-align: left;
+}
+.expertise__images .image-card__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.expertise__images .image-card__subtitle {
+  font-size: 16px;
+  margin-top: 0.5rem;
+  color: #D4A574;
 }
 
+@media (max-width: 768px) {
+  .expertise__content {
+    flex-direction: column;
+  }
+  .expertise__content__images {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
 .step-card {
   background-color: #FFFFFF;
   padding: 2rem;

@@ -169,7 +169,7 @@
 }
 
 
-/* SERVICES STATS */
+/* SERVICES */
 
 .Services{
 
@@ -388,29 +388,150 @@
 
 /* EXPERTISE */
 
-.expertise{
+.expertise {
+    padding: $spacing-xxl 15rem;
+    background-color: $color-secondary;
 
-    &__header{
-        text-align:center;
-        margin-bottom:$spacing-xl;
+
+    &__header {
+        text-align: center;
+        margin-bottom: $spacing-xl;
+    }
+    &__subtitle {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: $font-size-small;
+        color: $color-primary;
+        margin-bottom: $spacing-sm;
     }
 
-    &__title{
-        font-family:$font-secondary;
-        font-size:$font-size-h2;
+    &__title {
+        font-family: $font-secondary;
+        font-size: $font-size-h2;
+        font-weight: 700;
+        color: $color-white;
+        margin-bottom: $spacing-md;
+
+        .text-accent {
+            color: $color-accent;
+        }
     }
 
-    &__description{
-        color:$color-gray;
+    &__description {
+        font-size: $font-size-large;
+        color: $color-gray;
+        max-width: 700px;
+        margin: 0 auto;
     }
 
-    &__steps{
-        display:grid;
-        grid-template-columns:repeat(3,1fr);
-        gap:$spacing-lg;
-        margin-top:$spacing-lg;
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: $spacing-lg;
+        justify-content: center;
+    }
+    &__steps {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: $spacing-md;
+        flex: 1 1 60%;
     }
 
+        & .step-card {
+        background-color: $color-secondary-light;
+        border-radius: $border-radius;
+        padding: $spacing-md;
+        text-align: center;
+        transition: all $transition-speed ease;
+        box-shadow: $box-shadow;
+        border: $color-gray solid 1px;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: $box-shadow-lg;
+            border: $color-primary solid 1px;
+            background-color: #3f444a;
+        }
+
+        &__icon {
+            width: 50px;
+            height: 50px;
+            margin: 0 auto $spacing-sm;
+            background-color: $color-primary-dark;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $color-white;
+        }
+
+        &__title {
+            font-size: $font-size-h4;
+            font-weight: 600;
+            color: $color-white;
+            margin-bottom: $spacing-xs;
+        }
+
+        &__description {
+            font-size: $font-size-base;
+            color: $color-gray;
+        }
+        }
+
+        &__images {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-md;
+        flex: 1 1 35%;
+
+        .image-card {
+            position: relative;
+            border-radius: $border-radius;
+            overflow: hidden;
+
+            &__img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform $transition-speed ease;
+            }
+
+            &__overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.6);
+            padding: $spacing-md;
+            color: $color-white;
+            text-align: left;
+            }
+            &__title {
+                font-size: $font-size-h4;
+                font-weight: 700;
+            }
+
+            &__subtitle {
+                font-size: $font-size-base;
+                margin-top: $spacing-xs;
+                color: $color-primary;
+            }
+        }
+    }
+}
+
+// Responsive
+@media (max-width: $breakpoint-tablet) {
+    .expertise__content {
+        flex-direction: column;
+
+        &__images {
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
 }
 
 .step-card{
