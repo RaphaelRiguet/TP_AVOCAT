@@ -45,6 +45,8 @@ body{
         margin-bottom:$spacing-md;
     }
 
+    &__info-box
+
     &__image {
         position: relative;
         width: fit-content;
@@ -97,7 +99,6 @@ body{
         }
     }
 
-    // Card statistique (en bas à gauche)
     &__stat-card {
         position: absolute;
         bottom: 40px;

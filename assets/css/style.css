@@ -116,12 +116,12 @@ body {
   color: #FFFFFF;
   margin-bottom: 2rem;
 }
-.accueil__image {
+.accueil__info-box .accueil__image {
   position: relative;
   width: fit-content;
   margin-right: 10rem;
 }
-.accueil__image img {
+.accueil__info-box .accueil__image img {
   width: 100%;
   max-width: 600px;
   height: auto;
