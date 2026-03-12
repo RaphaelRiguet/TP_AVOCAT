@@ -23,7 +23,6 @@ body {
   font-family: "Poppins", sans-serif;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-color: #1E2A3A;
-  z-index: 100;
 }
 .navbar__container {
   max-width: 1200px;
@@ -405,7 +404,6 @@ body {
 .services__item {
   background-color: #FFFFFF;
   border-radius: 8px;
-  padding: 2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .services__item__link {
@@ -435,6 +433,7 @@ body {
 .services__item--primary {
   background-color: #D4A574;
   color: #FFFFFF;
+  padding: 2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
