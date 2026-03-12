@@ -24,25 +24,35 @@ body{
 .accueil{
 
     margin-top: 10rem;
-    
+    background-color: $color-secondary-light;
+
     &__content{
         display:flex;
         align-items:center;
         gap:$spacing-xl;
+        margin: 0 $spacing-lg;
     }
 
     &__title{
         font-family:$font-secondary;
         font-size:$font-size-h1;
         margin-bottom:$spacing-sm;
+        color: $color-white;
     }
 
     &__description{
-        color:$color-gray;
+        color:$color-white;
         margin-bottom:$spacing-md;
     }
 
+<<<<<<< HEAD
     &__image{
+=======
+    &__image {
+        position: relative;
+        width: fit-content;
+        margin-right: 10rem;
+>>>>>>> e07bba2098f43b3b270ec1278f22b4f533e3ff9c
 
         img{
             width:100%;
