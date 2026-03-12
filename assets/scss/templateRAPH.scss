@@ -192,7 +192,7 @@
 }
 .avocats__description{
     color:$color-gray;
-    font-size: $font-size-large ;
+    font-size: $font-size-h4 ;
     line-height: 1.7;
     margin-bottom: $spacing-xxl;
     text-align: center;
@@ -222,7 +222,7 @@
     text-align: center;
     background-color: #1e2a3a;
     color: #fff;
-    width: 18rem;
+    width: 19rem;
 
     &__image{
         width:100%;
@@ -242,7 +242,35 @@
         font-family: $font-primary;
         margin-bottom: $spacing-sm;
         padding:$spacing-sm;
+        
     }
+    
 
+}
+    &:hover{
+    box-shadow:$box-shadow-lg;
+    @keyframes monter {
+        from {
+    transform: translateY(0);
+    }
+        to {
+    transform: translateY(-5px);
+    }
+}
+animation: monter 0.5s forwards;
+
+
+    .attorney-card__image-wrapper{
+    box-shadow:$box-shadow-lg;
+    @keyframes grandir {
+        from {
+        transform: scale(1);
+    }
+        to {
+        transform: scale(1.05);
+    }
+}
+    animation: grandir 1s forwards;
+}
 }
 }

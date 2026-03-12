@@ -828,7 +828,7 @@ body {
 
 .avocats__description {
   color: #6C757D;
-  font-size: 18px;
+  font-size: 1.5rem;
   line-height: 1.7;
   margin-bottom: 6rem;
   text-align: center;
@@ -852,7 +852,7 @@ body {
   text-align: center;
   background-color: #1e2a3a;
   color: #fff;
-  width: 18rem;
+  width: 19rem;
 }
 .attorney-card__image {
   width: 100%;
@@ -870,6 +870,34 @@ body {
   font-family: "Poppins", sans-serif;
   margin-bottom: 1rem;
   padding: 1rem;
+}
+.attorney-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+@keyframes monter {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+.attorney-card:hover {
+  animation: monter 0.5s forwards;
+}
+.attorney-card:hover .attorney-card__image-wrapper {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+@keyframes grandir {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+.attorney-card:hover .attorney-card__image-wrapper {
+  animation: grandir 1s forwards;
 }
 
 /*# sourceMappingURL=style.css.map */
