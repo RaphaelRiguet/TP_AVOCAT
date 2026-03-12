@@ -1,3 +1,312 @@
+@use './variables.scss' as *;
+
+/* GLOBAL */
+
 .accueil{
     margin-top: 10rem;
+}
+
+body{
+    font-family: $font-primary;
+    font-size: $font-size-base;
+    color: $color-dark;
+    background-color: $color-light;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 $spacing-md;
+}
+
+.text-accent{
+    color: $color-primary;
+}
+
+.section{
+    padding: $spacing-xxl 0;
+}
+
+
+/* ACCUEIL */
+
+.accueil{
+
+    &__content{
+        display:flex;
+        align-items:center;
+        gap:$spacing-xl;
+    }
+
+    &__title{
+        font-family:$font-secondary;
+        font-size:$font-size-h1;
+        margin-bottom:$spacing-sm;
+    }
+
+    &__description{
+        color:$color-gray;
+        margin-bottom:$spacing-md;
+    }
+
+    &__image{
+
+        img{
+            width:100%;
+            border-radius:$border-radius;
+        }
+    }
+
+}
+
+
+/* SERVICES STATS */
+
+.Services{
+
+    background-color:$color-secondary;
+    padding:$spacing-xl 0;
+
+    &__grid{
+        display:grid;
+        grid-template-columns:repeat(4,1fr);
+        gap:$spacing-lg;
+        text-align:center;
+    }
+
+    &__number{
+        color:$color-primary;
+        font-size:$font-size-h2;
+    }
+
+    &__label{
+        color:$color-white;
+        font-size:$font-size-small;
+    }
+
+}
+
+
+/* A PROPOS */
+
+.propos{
+
+    &__container{
+        display:flex;
+        align-items:center;
+        gap:$spacing-xl;
+    }
+
+    &__title{
+        font-family:$font-secondary;
+        font-size:$font-size-h2;
+        margin:$spacing-sm 0;
+    }
+
+    &__description{
+        color:$color-gray;
+        margin-bottom:$spacing-md;
+    }
+
+    &__features{
+        margin:$spacing-md 0;
+    }
+
+    &__feature{
+        display:flex;
+        align-items:center;
+        gap:$spacing-sm;
+        margin-bottom:$spacing-xs;
+    }
+
+}
+
+
+/* EXPERTISE */
+
+.expertise{
+
+    &__header{
+        text-align:center;
+        margin-bottom:$spacing-xl;
+    }
+
+    &__title{
+        font-family:$font-secondary;
+        font-size:$font-size-h2;
+    }
+
+    &__description{
+        color:$color-gray;
+    }
+
+    &__steps{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        gap:$spacing-lg;
+        margin-top:$spacing-lg;
+    }
+
+}
+
+.step-card{
+    background-color:$color-white;
+    padding:$spacing-md;
+    border-radius:$border-radius;
+    box-shadow:$box-shadow;
+
+    &:hover{
+        box-shadow:$box-shadow-lg;
+    }
+}
+
+
+/* AVIS */
+
+.avis{
+
+    background-color:$color-light;
+
+    &__header{
+        text-align:center;
+        margin-bottom:$spacing-xl;
+    }
+
+    &__grid{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:$spacing-lg;
+    }
+
+}
+
+.testimonial{
+
+    background-color:$color-white;
+    padding:$spacing-md;
+    border-radius:$border-radius;
+    box-shadow:$box-shadow;
+
+    &--accent{
+        border-left:4px solid $color-primary;
+    }
+
+    &__avatar{
+        width:50px;
+        border-radius:50%;
+    }
+
+}
+
+
+/* AVOCATS */
+
+.avocats{
+
+    &__header{
+        text-align:center;
+        margin-bottom:$spacing-xl;
+    }
+
+    &__grid{
+        display:grid;
+        grid-template-columns:repeat(4,1fr);
+        gap:$spacing-lg;
+    }
+
+}
+
+.attorney-card{
+
+    background-color:$color-white;
+    border-radius:$border-radius;
+    box-shadow:$box-shadow;
+    overflow:hidden;
+
+    &__image{
+        width:100%;
+    }
+
+    &__content{
+        padding:$spacing-sm;
+    }
+
+}
+
+
+/* ACTUALITÉS */
+
+.actualités{
+
+    background-color:$color-light;
+
+    &__header{
+        text-align:center;
+        margin-bottom:$spacing-xl;
+    }
+
+    &__grid{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        gap:$spacing-lg;
+    }
+
+}
+
+.actualités-card{
+
+    background-color:$color-white;
+    border-radius:$border-radius;
+    overflow:hidden;
+    box-shadow:$box-shadow;
+
+    &__image{
+        width:100%;
+    }
+
+    &__content{
+        padding:$spacing-md;
+    }
+
+}
+
+
+/* FOOTER */
+
+.footer{
+
+    background-color:$color-secondary;
+    color:$color-white;
+    padding:$spacing-xl 0;
+
+    &__main{
+        display:grid;
+        grid-template-columns:2fr 1fr 1fr 1.5fr;
+        gap:$spacing-xl;
+    }
+
+    &__logo{
+        font-family:$font-secondary;
+        font-size:$font-size-h4;
+        margin-bottom:$spacing-sm;
+    }
+
+    &__link{
+        display:block;
+        text-decoration:none;
+        color:$color-light;
+        margin-bottom:$spacing-xs;
+
+        &:hover{
+            color:$color-primary;
+        }
+    }
+
+    &__bottom{
+        text-align:center;
+        margin-top:$spacing-lg;
+        border-top:1px solid rgba(255,255,255,0.2);
+        padding-top:$spacing-sm;
+    }
+
 }
