@@ -738,7 +738,17 @@ body {
 }
 .services__item:hover {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  transform: translateY(-5px);
+}
+@keyframes monter {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+.services__item:hover {
+  animation: monter 0.5s forwards;
 }
 .services__item--primary {
   background-color: #D4A574;
@@ -770,7 +780,17 @@ body {
 }
 .services__item--primary:hover {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  transform: translateY(-5px);
+}
+@keyframes monter {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+.services__item--primary:hover {
+  animation: monter 0.5s forwards;
 }
 .services__item--secondary {
   background-color: #1E2A3A;
@@ -801,7 +821,17 @@ body {
 }
 .services__item--secondary:hover {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  transform: translateY(-5px);
+}
+@keyframes monter {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+.services__item--secondary:hover {
+  animation: monter 0.5s forwards;
 }
 
 .avocats__subtitle {

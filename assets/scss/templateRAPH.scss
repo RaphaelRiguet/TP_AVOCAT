@@ -70,7 +70,15 @@
         }
         &:hover{
             box-shadow:$box-shadow-lg;
+            @keyframes monter {
+            from {
+            transform: translateY(0);
+        }
+            to {
             transform: translateY(-5px);
+        }
+}
+    animation: monter 0.5s forwards;;
         }
 
 
@@ -103,7 +111,15 @@
         }
         &:hover{
             box-shadow:$box-shadow-lg;
+            @keyframes monter {
+            from {
+            transform: translateY(0);
+        }
+            to {
             transform: translateY(-5px);
+        }
+}
+animation: monter 0.5s forwards;;
         }
     }
 
@@ -135,7 +151,15 @@
         }
         &:hover{
             box-shadow:$box-shadow-lg;
-            transform: translateY(-5px);
+            @keyframes monter {
+        from {
+        transform: translateY(0);
+    }
+        to {
+        transform: translateY(-5px);
+    }
+}
+    animation: monter 0.5s forwards;;
         }
 
     }
