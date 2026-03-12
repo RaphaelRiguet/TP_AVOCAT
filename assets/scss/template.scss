@@ -193,6 +193,16 @@
         font-size:$font-size-small;
     }
 
+    &__item{
+        padding:$spacing-md;
+        border-radius:$border-radius;
+
+        &:hover{
+            background-color: #3f444a;
+            transform: translateY(-10px);
+        }
+    }
+
 }
 
 

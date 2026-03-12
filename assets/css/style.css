@@ -235,6 +235,14 @@ body {
   color: #FFFFFF;
   font-size: 14px;
 }
+.Services__item {
+  padding: 2rem;
+  border-radius: 8px;
+}
+.Services__item:hover {
+  background-color: #3f444a;
+  transform: translateY(-10px);
+}
 
 /* A PROPOS */
 .propos__container {
