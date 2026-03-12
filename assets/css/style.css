@@ -410,10 +410,11 @@ body {
 }
 
 .services__section {
-  background-color: #FFFFFF !important;
+  background-color: #F8F9FA !important;
 }
 
 .services__subtitle {
+  padding-top: 3.5rem;
   color: #D4A574;
   font-size: 18px;
   margin-bottom: 1rem;

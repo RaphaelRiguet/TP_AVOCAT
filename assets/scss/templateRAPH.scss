@@ -1,9 +1,10 @@
 @use'./variables.scss' as *;
 
 .services__section{
-    background-color: $color-white!important;
+    background-color: $color-light!important;
 }
 .services__subtitle{
+    padding-top: $font-size-h1 ;
     color: $color-primary;
     font-size: $font-size-large;
     margin-bottom: $spacing-sm;
@@ -133,7 +134,7 @@
         }
         &:hover{
             box-shadow:$box-shadow-lg;
-             transform: translateY(-5px);
+            transform: translateY(-5px);
         }
 
     }
