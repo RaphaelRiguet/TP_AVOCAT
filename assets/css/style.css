@@ -5,6 +5,11 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+  background-color: #2C3E50;
+}
+
 body {
   background-color: #1E2A3A;
   color: #FFFFFF;
@@ -93,24 +98,28 @@ body {
 /* ACCUEIL */
 .accueil {
   margin-top: 10rem;
+  background-color: #2C3E50;
 }
 .accueil__content {
   display: flex;
   align-items: center;
   gap: 4rem;
+  margin: 0 3rem;
 }
 .accueil__title {
   font-family: "Playfair Display", serif;
   font-size: 3.5rem;
   margin-bottom: 1rem;
+  color: #FFFFFF;
 }
 .accueil__description {
-  color: #6C757D;
+  color: #FFFFFF;
   margin-bottom: 2rem;
 }
 .accueil__image {
   position: relative;
   width: fit-content;
+  margin-right: 10rem;
 }
 .accueil__image img {
   width: 100%;
