@@ -57,6 +57,7 @@
     &--primary{
         background-color: $color-primary;
         color:$color-white ;
+        padding: $spacing-md;
         box-shadow:$box-shadow;
         border-radius: $border-radius;
         &__link{
@@ -87,7 +88,7 @@
 
     &--secondary{
         background-color: $color-secondary;
-
+        padding: $spacing-md;
         box-shadow:$box-shadow;
         border-radius:$border-radius ;
         &__title{

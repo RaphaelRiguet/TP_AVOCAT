@@ -357,6 +357,7 @@ body {
 .services__item--primary {
   background-color: #D4A574;
   color: #FFFFFF;
+  padding: 2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
@@ -386,6 +387,7 @@ body {
 }
 .services__item--secondary {
   background-color: #1E2A3A;
+  padding: 2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
