@@ -81,12 +81,6 @@ body {
   background-color: #F8F9FA;
 }
 
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 2rem;
-}
-
 .text-accent {
   color: #D4A574;
 }
