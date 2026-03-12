@@ -561,6 +561,32 @@ body {
 .avis {
   background-color: #F8F9FA;
 }
+.avis .avis__subtitle {
+  padding-top: 3.5rem;
+  color: #D4A574;
+  font-size: 18px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+.avis .avis__title {
+  font-size: 2.5rem;
+  color: #212529;
+  font-weight: bold;
+  text-align: center;
+}
+.avis .avis__description {
+  color: #6C757D;
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 6rem;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .avis__header {
   text-align: center;
   margin-bottom: 4rem;
@@ -576,13 +602,22 @@ body {
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 3rem;
 }
 .testimonial--accent {
   border-left: 4px solid #D4A574;
+  background-color: #D4A574;
+  color: #FFFFFF;
 }
 .testimonial__avatar {
   width: 50px;
   border-radius: 50%;
+}
+.testimonial__header {
+  display: flex;
+}
+.testimonial__info {
+  padding-left: 1rem;
 }
 
 /* AVOCATS */

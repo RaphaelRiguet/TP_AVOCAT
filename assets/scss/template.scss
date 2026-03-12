@@ -408,11 +408,11 @@
     padding: $spacing-xxl 15rem;
     background-color: $color-secondary;
 
-
     &__header {
         text-align: center;
         margin-bottom: $spacing-xl;
     }
+
     &__subtitle {
         text-transform: uppercase;
         font-weight: 500;
@@ -576,6 +576,35 @@
 
     background-color:$color-light;
 
+
+.avis__subtitle{
+    padding-top: $font-size-h1 ;
+    color: $color-primary;
+    font-size: $font-size-large;
+    margin-bottom: $spacing-sm;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: $font-primary;
+    text-align: center;
+}
+.avis__title{
+    font-size: $font-size-h2;
+    color:$color-dark;
+    font-weight: bold;
+    text-align: center;
+
+}
+.avis__description{
+    color:$color-gray;
+    font-size: $font-size-large;
+    line-height: 1.7;
+    margin-bottom: $spacing-xxl;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
     &__header{
         text-align:center;
         margin-bottom:$spacing-xl;
@@ -595,14 +624,25 @@
     padding:$spacing-md;
     border-radius:$border-radius;
     box-shadow:$box-shadow;
+    padding: 3rem;
 
     &--accent{
         border-left:4px solid $color-primary;
+        background-color: $color-primary;
+        color: $color-white;
     }
 
     &__avatar{
         width:50px;
         border-radius:50%;
+    }
+
+    &__header{
+        display: flex;
+    }
+
+    &__info{
+        padding-left:$spacing-sm;
     }
 
 }
