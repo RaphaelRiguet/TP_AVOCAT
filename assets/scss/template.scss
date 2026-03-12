@@ -42,14 +42,103 @@ body{
         margin-bottom:$spacing-md;
     }
 
-    &__image{
+    &__image {
+        position: relative;
+        width: fit-content;
 
-        img{
-            width:100%;
-            border-radius:$border-radius;
+        img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        border-radius: 16px;
+        display: block;
         }
     }
 
+    &__profile-card {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        background: white;
+        padding: 15px 20px;
+        border-radius: 14px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+        max-width: 220px;
+    }
+
+    &__profile-img {
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    &__profile-info {
+        h5 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 700;
+        }
+
+        p {
+        margin: 0;
+        font-size: 14px;
+        color: #777;
+        }
+    }
+
+    // Card statistique (en bas à gauche)
+    &__stat-card {
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+
+        background: white;
+        padding: 25px;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+        max-width: 260px;
+
+        h3 {
+        font-size: 40px;
+        margin: 0 0 10px;
+        color: #c79a63;
+        font-weight: 700;
+        }
+
+        p {
+        margin-bottom: 15px;
+        font-size: 16px;
+        color: #333;
+        }
+    }
+
+    &__signature {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-top: 1px solid #eee;
+        padding-top: 10px;
+
+        img {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        object-fit: cover;
+        }
+
+        span {
+        font-size: 14px;
+        color: #666;
+        }
+    }
 }
 
 
