@@ -537,4 +537,32 @@ body {
   transform: translateY(-5px);
 }
 
+.avocats__subtitle {
+  color: #D4A574;
+  font-size: 18px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.avocats__title {
+  font-size: 2.5rem;
+  color: #212529;
+  font-weight: bold;
+  text-align: center;
+}
+
+.avocats__description {
+  color: #6C757D;
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 6rem;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*# sourceMappingURL=style.css.map */

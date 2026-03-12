@@ -141,3 +141,30 @@
 
 }
 }
+
+.avocats__subtitle{
+    color: $color-primary;
+    font-size: $font-size-large;
+    margin-bottom: $spacing-sm;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: $font-primary;
+    text-align: center;
+}
+.avocats__title{
+    font-size: $font-size-h2;
+    color:$color-dark;
+    font-weight: bold;
+    text-align: center;
+
+}
+.avocats__description{
+    color:$color-gray;
+    font-size: $font-size-large;
+    line-height: 1.7;
+    margin-bottom: $spacing-xxl;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
