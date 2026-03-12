@@ -199,7 +199,15 @@
 
         &:hover{
             background-color: #3f444a;
-            transform: translateY(-10px);
+            @keyframes monter {
+                from {
+                    transform: translateY(0);
+                }
+                to {
+                    transform: translateY(-5px);
+                }
+            }
+            animation: monter 0.5s forwards;
         }
     }
 
@@ -279,7 +287,15 @@
         font-size: 0.75rem;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        @keyframes monter {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-5px);
+            }
+        }
+        animation: monter 0.5s forwards;
         }
     }
 
@@ -448,7 +464,15 @@
         border: $color-gray solid 1px;
 
         &:hover {
-            transform: translateY(-5px);
+            @keyframes monter {
+                from {
+                    transform: translateY(0);
+                }
+                to {
+                    transform: translateY(-5px);
+                }
+            }
+            animation: monter 0.5s forwards;
             box-shadow: $box-shadow-lg;
             border: $color-primary solid 1px;
             background-color: #3f444a;

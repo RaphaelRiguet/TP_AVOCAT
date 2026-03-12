@@ -241,7 +241,17 @@ body {
 }
 .Services__item:hover {
   background-color: #3f444a;
-  transform: translateY(-10px);
+}
+@keyframes monter {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+.Services__item:hover {
+  animation: monter 0.5s forwards;
 }
 
 /* A PROPOS */
@@ -307,7 +317,17 @@ body {
   font-size: 0.75rem;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+}
+@keyframes monter {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+.propos__feature-icon::after {
+  animation: monter 0.5s forwards;
 }
 .propos__feature-text {
   color: #2a2a2a;
@@ -445,8 +465,16 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border: #6C757D solid 1px;
 }
+@keyframes monter {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
 .expertise .step-card:hover {
-  transform: translateY(-5px);
+  animation: monter 0.5s forwards;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   border: #D4A574 solid 1px;
   background-color: #3f444a;
