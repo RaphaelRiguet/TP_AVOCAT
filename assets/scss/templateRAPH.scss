@@ -170,3 +170,72 @@
     margin-left: auto;
     margin-right: auto;
 }
+.avocats{
+    background-color: $color-light;
+    padding: $spacing-xxl 0;
+}
+.avocats__subtitle{
+    color: $color-primary;
+    font-size: $font-size-large;
+    margin-bottom: $spacing-sm;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: $font-primary;
+    text-align: center;
+}
+.avocats__title{
+    font-size: $font-size-h2;
+    color:$color-dark;
+    font-weight: bold;
+    text-align: center;
+
+}
+.avocats__description{
+    color:$color-gray;
+    font-size: $font-size-large;
+    line-height: 1.7;
+    margin-bottom: $spacing-xxl;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.avocats{
+
+    &__header{
+        text-align:center;
+        margin-bottom:$spacing-xl;
+    }
+
+    &__grid{
+        display:grid;
+        grid-template-columns:repeat(4,1fr);
+        gap:$spacing-lg;
+    }
+
+}
+
+.attorney-card{
+
+    text-align: center;
+    background-color: #1e2a3a;
+    color: #fff;
+
+    &__image{
+        width:100%;
+    }
+
+    &__content{
+
+        &__position{
+        color:$color-primary;
+        font-size: $font-size-large;
+        line-height: 1.7;
+        font-family: $font-primary;
+        margin-bottom: $spacing-sm;
+        padding:$spacing-sm;
+    }
+
+}
+}
