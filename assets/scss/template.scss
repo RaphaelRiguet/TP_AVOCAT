@@ -2,10 +2,6 @@
 
 /* GLOBAL */
 
-.accueil{
-    margin-top: 10rem;
-}
-
 body{
     font-family: $font-primary;
     font-size: $font-size-base;
@@ -32,6 +28,8 @@ body{
 
 .accueil{
 
+    margin-top: 10rem;
+    
     &__content{
         display:flex;
         align-items:center;
