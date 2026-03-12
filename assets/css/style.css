@@ -245,6 +245,9 @@ body {
 }
 
 /* A PROPOS */
+.propos {
+  background-color: #FFFFFF;
+}
 .propos__container {
   display: flex;
   align-items: center;
